@@ -10,7 +10,7 @@ export default function Home() {
       <HeroSection />
       <Introduction />
       <MySkills />
-      <Projects  />
+      <Projects />
     </div>
 
 
