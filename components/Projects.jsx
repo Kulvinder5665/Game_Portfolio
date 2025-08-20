@@ -3,14 +3,17 @@ import React from "react";
 import Link from "next/link";
 import { projectData } from "@/lib/data";
 
-const Projects = () => {
+const Projects = ({ limit }) => {
+
+  const projectToShow = limit ? projectData.slice(0, limit) : projectData;
+
   return (
     <div className="mx-auto py-20 px-5 flex flex-col gap-16 w-full md:w-7xl">
       <div className="title p-2 flex justify-center font-semibold bg-gradient-to-r from-amber-300 to-amber-100 bg-clip-text text-transparent text-3xl md:text-7xl">
         <h1>Projects & Technology</h1>
       </div>
 
-      {projectData.map((project) => (
+      {projectToShow.map((project) => (
         <div
           key={project.id}
           className="card1 flex flex-col gap-10 items-center justify-between"
