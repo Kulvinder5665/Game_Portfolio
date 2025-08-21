@@ -12,7 +12,9 @@ const Projects = ({ limit }) => {
       <div className="title p-2 flex justify-center font-semibold bg-gradient-to-r from-amber-300 to-amber-100 bg-clip-text text-transparent text-3xl md:text-7xl">
         <h1>Projects & Technology</h1>
       </div>
-
+      <div className="title p-2 flex justify-center font-semibold bg-gradient-to-r from-green-600 to-amber-50 bg-clip-text text-transparent text-6xl">
+        <h1>Game Development</h1>
+      </div>
       {projectToShow.map((project) => (
         <div
           key={project.id}

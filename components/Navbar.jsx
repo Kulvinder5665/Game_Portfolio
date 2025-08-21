@@ -18,7 +18,7 @@ const Navbar = () => {
     {/* Desktop navbar */}
     <nav id='navbar' className='hidden bg-black border-b border-slate-800 backdrop-blur-sm sticky top-0 md:flex justify-between items-center px-5 py-5 z-50'>
       <div className="logo">
-        <Link href={'/'} className='text-2xl font-semibold bg-gradient-to-r from-amber-300 to-amber-100 bg-clip-text text-transparent'>Portfolio</Link>
+        <Link href={'/'} className='text-2xl font-semibold bg-gradient-to-r from-amber-300 to-amber-100 bg-clip-text text-transparent'>Kulvinder</Link>
       </div>
       <div className='flex gap-5'>
         { navlinks.map((link) => {
